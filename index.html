@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="box">
+      <button type="button" id="my_button" name="button">Clicca per generare un numero random</button>
+      <p id="numero-random"></p>
+    </div>
+
+    <script type="text/javascript">
+      document.getElementById("my_button").addEventListener("click", displayRandomNumber);
+      function displayRandomNumber(){
+      document.getElementById("numero-random").innerHTML = Math.random();
+      }
+      var numeroRandomEl = document.getElementById("numero-random");
+      numeroRandomEl.className += "white";
+    </script>
+  </body>
+</html>
